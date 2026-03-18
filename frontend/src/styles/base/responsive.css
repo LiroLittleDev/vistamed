@@ -6,12 +6,33 @@
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  nav { position: relative; flex-wrap: wrap; }
+  nav {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .brand {
+    margin: 0 auto;
+    justify-content: center;
+    transform: translateX(-14px);
+  }
+  .hamburger {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   .brand-mark { width: 38px; height: 38px; }
 
   .hero { flex-direction: column; text-align: center; }
+  .hero {
+    min-height: auto;
+    padding: clamp(46px, 9vw, 72px) 5%;
+    gap: 26px;
+  }
+  .hero-content { max-width: 100%; }
   .hero-btns { justify-content: center; }
-  .hero-visual { width: 100%; max-width: 300px; margin: 0 auto; }
+  .hero-visual { width: 100%; max-width: 360px; margin: 0 auto; }
 
   .contact-grid { grid-template-columns: 1fr; }
 }
@@ -26,6 +47,7 @@
 
   .hero-btns { flex-direction: column; align-items: center; }
   .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+  .hero-visual { max-width: 320px; }
 }
 
 @media (max-width: 360px) {

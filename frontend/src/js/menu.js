@@ -9,13 +9,18 @@ function initMobileMenu() {
   }
 
   function toggleMenu() {
-    menu.classList.toggle('open');
+    const isOpen = menu.classList.toggle('open');
+    hamburger.classList.toggle('active', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
   }
 
   function closeMenu() {
     menu.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
   }
 
+  hamburger.setAttribute('aria-expanded', 'false');
   hamburger.addEventListener('click', toggleMenu);
 
   menuLinks.forEach(function(link) {

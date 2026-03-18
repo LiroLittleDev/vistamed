@@ -1,8 +1,9 @@
 footer {
-  background: var(--espresso);
-  color: rgba(255,255,255,0.65);
+  background: var(--green-dark);
+  color: rgba(255,255,255,0.75);
   text-align: center;
-  padding: 26px 5%;
-  font-size: 13px;
+  padding: 40px 5%;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
-footer strong { color: white; }
+footer strong { color: white; font-weight: 700; }
