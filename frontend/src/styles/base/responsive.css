@@ -1,0 +1,33 @@
+@media (max-width: 1024px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  nav { position: relative; flex-wrap: wrap; }
+  .brand-mark { width: 38px; height: 38px; }
+
+  .hero { flex-direction: column; text-align: center; }
+  .hero-btns { justify-content: center; }
+  .hero-visual { width: 100%; max-width: 300px; margin: 0 auto; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .features-grid { grid-template-columns: 1fr; }
+
+  .stats { flex-direction: row; flex-wrap: wrap; }
+  .stat-item { flex: 1 1 45%; border-right: none; border-bottom: 1px solid #e8f0e8; }
+  .stat-item:nth-child(odd) { border-right: 1px solid #e8f0e8; }
+
+  .hero-btns { flex-direction: column; align-items: center; }
+  .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+}
+
+@media (max-width: 360px) {
+  .stat-item { flex: 1 1 100%; border-right: none; }
+}

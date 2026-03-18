@@ -1,0 +1,76 @@
+.hero {
+  background: linear-gradient(135deg, var(--green-dark) 0%, #3d7a52 60%, var(--green-mid) 100%);
+  color: white;
+  padding: clamp(50px, 8vw, 100px) 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.hero-content { flex: 1 1 300px; max-width: 580px; }
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero-badge i { font-size: 12px; margin-right: 6px; vertical-align: middle; }
+.hero h1 { font-size: clamp(28px, 5vw, 52px); font-weight: 900; line-height: 1.1; margin-bottom: 18px; }
+.hero h1 em { color: #a8d5a8; font-style: normal; }
+.hero p { font-size: clamp(14px, 2vw, 18px); color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 32px; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+
+.btn-primary {
+  background: white;
+  color: var(--green-dark);
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn-primary:hover { background: var(--green-light); }
+
+.btn-secondary {
+  border: 2px solid rgba(255,255,255,0.6);
+  color: white;
+  padding: 13px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+.hero-visual {
+  flex: 0 1 240px;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+.hero-logo-chip {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  background: var(--green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid #d7e7d8;
+}
+.hero-logo-chip img { width: 60px; height: 60px; object-fit: contain; }
+.hero-visual p { color: var(--green-dark); margin-top: 12px; font-size: 13px; letter-spacing: 1px; font-weight: 700; }

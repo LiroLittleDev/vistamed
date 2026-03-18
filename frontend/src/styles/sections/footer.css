@@ -1,0 +1,8 @@
+footer {
+  background: var(--espresso);
+  color: rgba(255,255,255,0.65);
+  text-align: center;
+  padding: 26px 5%;
+  font-size: 13px;
+}
+footer strong { color: white; }
