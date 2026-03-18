@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vistamed - Produtos Hospitalares</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="brand">
+        <img src="src/images/iconjob.png" alt="Logo Vistamed" class="brand-mark" />
+        <div class="brand-copy">
+          <img src="src/images/namejob.png" alt="Vistamed" class="brand-name" />
+          <div class="logo-sub">Produtos Hospitalares</div>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#produtos">Produtos</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn-nav">Fale Conosco</a>
+      </div>
+      <button
+        class="hamburger"
+        id="hamburgerBtn"
+        aria-label="Abrir menu"
+        type="button"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#produtos" class="mobile-menu-link">Produtos</a>
+        <a href="#diferenciais" class="mobile-menu-link">Diferenciais</a>
+        <a href="#contato" class="mobile-menu-link">Contato</a>
+        <a href="#contato" class="btn-mobile mobile-menu-link">Fale Conosco</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fi-rr-hospital"></i>Referência em Saúde
+        </div>
+        <h1>Excelência em <em>Materiais Cirúrgicos</em> e Hospitalares</h1>
+        <p>
+          Fornecemos produtos hospitalares de alta qualidade, materiais estéreis
+          certificados e lentes intraoculares de última geração para clínicas e
+          hospitais.
+        </p>
+        <div class="hero-btns">
+          <a href="#produtos" class="btn-primary">Ver Produtos</a>
+          <a
+            href="https://wa.me/5592985702121?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.%20Pode%20me%20ajudar%3F
+"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-secondary"
+            >Solicitar Orçamento</a
+          >
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-visual-tag">
+          <i class="fi-rr-badge-check"></i>
+          Linha Premium
+        </div>
+        <div class="hero-logo-chip">
+          <img src="src/images/iconjob.png" alt="Tecnologia ocular Vistamed" />
+        </div>
+        <p>Tecnologia Avançada</p>
+        <div class="hero-visual-features">
+          <div class="hero-mini-card">
+            <i class="fi-rr-eye"></i>
+            <span>Precisão Ocular</span>
+          </div>
+          <div class="hero-mini-card">
+            <i class="fi-rr-hospital"></i>
+            <span>Padrão Hospitalar</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Produtos Disponíveis</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Materiais Certificados</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24h</div>
+        <div class="stat-label">Entrega Rápida</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">ANVISA</div>
+        <div class="stat-label">Regularizado</div>
+      </div>
+    </div>
+
+    <!-- PRODUTOS -->
+    <section class="products" id="produtos">
+      <div class="section-title">
+        <div class="tag">Nossos Produtos</div>
+        <h2>Linha Completa Hospitalar</h2>
+        <p>
+          Oferecemos uma ampla gama de produtos para atender às necessidades
+          cirúrgicas e hospitalares com máxima qualidade e segurança.
+        </p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="src/images/material-cirurgico.jpg" alt="Materiais Cirúrgicos" loading="lazy">
+          </div>
+          <div class="product-content">
+            <h3>Materiais Cirúrgicos</h3>
+            <p>
+              Instrumentais e materiais de alta precisão para procedimentos
+              cirúrgicos, garantindo segurança e eficácia em cada intervenção.
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="src/images/material-hospitalar.jpg" alt="Produtos Hospitalares" loading="lazy">
+          </div>
+          <div class="product-content">
+            <h3>Produtos Hospitalares</h3>
+            <p>
+              Linha completa de suprimentos hospitalares para uso em UTI, centros
+              cirúrgicos, ambulatórios e enfermarias.
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="src/images/lente-intraoculares.jpeg" alt="Lentes Intraoculares" loading="lazy">
+          </div>
+          <div class="product-content">
+            <h3>Lentes Intraoculares</h3>
+            <p>
+              Lentes intraoculares de última geração para cirurgias de catarata e
+              correção refrativa, com tecnologias monofocal, bifocal e trifocal.
+            </p>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="src/images/material-esteril.jpg" alt="Materiais Estéreis" loading="lazy">
+          </div>
+          <div class="product-content">
+            <h3>Materiais Estéreis</h3>
+            <p>
+              Produtos com esterilização certificada — campos cirúrgicos, luvas,
+              compressas, curativos e kits descartáveis para máxima assepsia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="features" id="diferenciais">
+      <div class="section-title">
+        <div class="tag">Por que a Vistamed?</div>
+        <h2>Nossos Diferenciais</h2>
+        <p>
+          Comprometidos com qualidade, segurança e agilidade no fornecimento de
+          produtos hospitalares.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fi-rr-badge-check"></i></div>
+          <h3>Qualidade Garantida</h3>
+          <p>
+            Todos os produtos seguem rigorosos padrões de qualidade e
+            regulamentações da ANVISA.
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fi-rr-truck-side"></i></div>
+          <h3>Entrega Ágil</h3>
+          <p>
+            Logística eficiente para atender hospitais e clínicas em prazos
+            reduzidos com rastreamento completo.
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fi-rr-headset"></i></div>
+          <h3>Suporte Especializado</h3>
+          <p>
+            Equipe técnica qualificada para orientar profissionais de saúde na
+            escolha dos produtos ideais.
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fi-rr-briefcase"></i></div>
+          <h3>Amplo Portfólio</h3>
+          <p>
+            Catálogo diversificado com marcas nacionais e importadas para suprir
+            todas as demandas hospitalares.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <h2>Pronto para equipar sua clínica?</h2>
+      <p>
+        Entre em contato e receba um orçamento personalizado com as melhores
+        condições do mercado.
+      </p>
+      <a
+        href="https://wa.me/5592985702121?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Vistamed%20e%20gostaria%20de%20receber%20um%20or%C3%A7amento.%20Podem%20me%20ajudar%3F"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-cta"
+      >
+        Fale com um especialista agora
+      </a>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="tag">Fale Conosco</div>
+          <h2>Entre em Contato</h2>
+          <p>
+            Nossa equipe está pronta para atender sua demanda com agilidade e
+            excelência. Solicite um orçamento ou tire suas dúvidas.
+          </p>
+          <div class="contact-item">
+            <span class="contact-item-icon"
+              ><i class="fi-rr-phone-call"></i
+            ></span>
+            <a
+              href="https://wa.me/5592985702121"
+              target="_blank"
+              rel="noopener noreferrer"
+              >(92) 98570-2121 / 99144-8304</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-icon"
+              ><i class="fi-rr-envelope"></i
+            ></span>
+            <a href="mailto:vistamed2026@gmail.com">vistamed2026@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item-icon"
+              ><i class="fi-brands-instagram"></i
+            ></span>
+            <a
+              href="https://instagram.com/vistamedoft"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@vistamedoft</a
+            >
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="email" id="email" placeholder="Seu e-mail" required />
+          <input
+            type="tel"
+            id="telefone"
+            placeholder="Telefone / WhatsApp"
+            required
+          />
+          <textarea
+            id="mensagem"
+            placeholder="Descreva sua necessidade ou produto de interesse..."
+            required
+          ></textarea>
+          <button type="submit" class="btn-form">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        &copy; 2026 <strong>Vistamed Produtos Hospitalares</strong>. Todos os
+        direitos reservados.
+      </p>
+    </footer>
+
+    <script src="src/js/menu.js" defer></script>
+    <script src="src/js/whatsapp-form.js" defer></script>
+    <script src="src/js/main.js" defer></script>
+  </body>
+</html>
