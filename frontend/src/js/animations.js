@@ -10,10 +10,20 @@ function initScrollReveal() {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
+  // Elementos acima do fold ficam visíveis imediatamente, sem esconder/animar
+  var viewportHeight = window.innerHeight;
   revealElements.forEach(function(el) {
-    observer.observe(el);
+    var rect = el.getBoundingClientRect();
+    if (rect.top < viewportHeight) {
+      // Já está visível no carregamento: mostra sem transição
+      el.style.transition = 'none';
+      el.classList.add('visible');
+    } else {
+      // Abaixo do fold: observa normalmente
+      observer.observe(el);
+    }
   });
 }
 

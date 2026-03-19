@@ -2,8 +2,7 @@ nav {
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  padding: 0 clamp(24px, 5vw, 80px);
-  height: 72px;
+  padding: 16px clamp(24px, 5vw, 80px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,12 +12,14 @@ nav {
   z-index: 1000;
   transition: background var(--duration-mid) ease,
               box-shadow var(--duration-mid) ease,
-              height var(--duration-mid) ease;
+              padding var(--duration-mid) ease;
+  will-change: background, box-shadow;
 }
 nav.scrolled {
   background: rgba(255,255,255,0.92);
   box-shadow: 0 1px 30px rgba(0,0,0,0.08);
-  height: 64px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }

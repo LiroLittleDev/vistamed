@@ -9,7 +9,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 ::selection { background: var(--green-dark); color: var(--white); }
-a, button, input, textarea { transition: all var(--duration-fast) ease; }
+a, button { transition: color var(--duration-fast) ease, background var(--duration-fast) ease, box-shadow var(--duration-fast) ease, transform var(--duration-fast) ease; }
+input, textarea { transition: border var(--duration-fast) ease, box-shadow var(--duration-fast) ease; }
 img { display: block; max-width: 100%; }
 
 /* ── Scroll-reveal base ── */
